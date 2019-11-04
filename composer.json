@@ -1,0 +1,12 @@
+{
+  "name": "nekofar/omnipay-yekpay",
+  "description": "Yekpay driver for the Omnipay PHP payment processing library",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Milad Nekofar",
+      "email": "milad@nekofar.com"
+    }
+  ]
+}
