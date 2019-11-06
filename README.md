@@ -66,7 +66,6 @@ The final result includes the following methods to inspect additional details:
 ```php
 // Send purchase complete request
 $response = $gateway->completePurchase([
-    'amount' => 100,
     'authority' => $_REQUEST['Authority'], 
 )->send();
 
