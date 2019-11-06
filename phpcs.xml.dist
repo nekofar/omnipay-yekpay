@@ -39,6 +39,7 @@
         <exclude name="Squiz.Commenting.FileComment.IncorrectAuthor" />
         <exclude name="Squiz.Commenting.FileComment.SubpackageTagOrder"/>
         <exclude name="Squiz.Commenting.FileComment.MissingSubpackageTag"/>
+        <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
     </rule>
 
     <rule ref="Squiz.Commenting.ClassComment" />
@@ -47,6 +48,7 @@
     <rule ref="Squiz.Commenting.FunctionComment">
         <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment" />
         <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows" />
+        <exclude name="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing" />
     </rule>
 
     <rule ref="Squiz.Commenting.FunctionCommentThrowTag" />
