@@ -40,8 +40,8 @@ The result will be a redirect to the gateway or bank.
 use Omnipay\Omnipay;
 
 $gateway = Omnipay::create('Yekpay');
-$gateway->setMerchantId('xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx');
-$gateway->setReturnUrl('https://www.example.com/return');
+$this->gateway->setMerchantId('XXXXXXXXXXXXXXXXXXXX');
+$this->gateway->setReturnUrl('https://example.com/callback.php');
 
 // Send purchase request
 $response = $gateway->purchase([
