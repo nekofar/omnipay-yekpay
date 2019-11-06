@@ -5,6 +5,7 @@ namespace Omnipay\Yekpay\Tests;
 use Omnipay\Tests\GatewayTestCase;
 use Omnipay\Yekpay\Gateway;
 use Omnipay\Yekpay\Message\AbstractResponse;
+use Omnipay\Yekpay\Message\PurchaseCompleteResponse;
 use Omnipay\Yekpay\Message\PurchaseResponse;
 
 class GatewayTest extends GatewayTestCase
@@ -86,12 +87,13 @@ class GatewayTest extends GatewayTestCase
             'authority' => '115162456765',
         ]);
 
+        /** @var PurchaseCompleteResponse $response */
         $response = $this->gateway->completePurchase([
             'authority' => '115162456765',
         ])->send();
 
         $this->assertTrue($response->isSuccessful());
-        $this->assertSame('0000001', $response->getTransactionReference());
+        $this->assertSame('XXXXXXXXXXXX', $response->getTransactionReference());
     }
 
     /**
@@ -105,6 +107,7 @@ class GatewayTest extends GatewayTestCase
             'authority' => '115162456765',
         ]);
 
+        /** @var PurchaseCompleteResponse $response */
         $response = $this->gateway->completePurchase([
             'authority' => '115162456765',
         ])->send();
