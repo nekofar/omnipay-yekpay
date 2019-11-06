@@ -208,7 +208,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     }
 
     /**
-     * Set the billing country of your customer
+     * Set the billing city of your customer
      *
      * @param string $value
      * @return $this
@@ -216,6 +216,62 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     public function setCity($value)
     {
         return $this->setParameter('billingCity', $value);
+    }
+
+    /**
+     * Get the order number
+     *
+     * @return string
+     */
+    public function getOrderNumber()
+    {
+        return $this->getParameter('orderNumber');
+    }
+
+    /**
+     * Set the order number
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setOrderNumber($value)
+    {
+        return $this->setParameter('orderNumber', $value);
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getFromCurrencyCode()
+    {
+        return $this->getParameter('fromCurrencyCode');
+    }
+
+    /**
+     * @param string $value
+     * @return $this
+     */
+    public function setFromCurrencyCode($value)
+    {
+        return $this->setParameter('fromCurrencyCode', $value);
+    }
+
+    /**
+     * @return string
+     */
+    public function getToCurrencyCode()
+    {
+        return $this->getParameter('toCurrencyCode');
+    }
+
+    /**
+     * @param string $value
+     * @return $this
+     */
+    public function setToCurrencyCode($value)
+    {
+        return $this->setParameter('toCurrencyCode', $value);
     }
 
     /**

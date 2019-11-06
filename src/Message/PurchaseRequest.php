@@ -27,6 +27,9 @@ class PurchaseRequest extends AbstractRequest
         $this->validate(
             'merchantId',
             'amount',
+            'orderNumber',
+            'fromCurrencyCode',
+            'toCurrencyCode',
             'returnUrl',
             'billingFirstName',
             'billingLastName',
@@ -42,9 +45,9 @@ class PurchaseRequest extends AbstractRequest
         return [
             'merchantID' => $this->getMerchantId(),
             'amount' => $this->getAmount(),
-            'fromCurrencyCode' => 978,
-            'toCurrencyCode' => 364,
-            'orderNumber' => 125548,
+            'fromCurrencyCode' => $this->getFromCurrencyCode(),
+            'toCurrencyCode' => $this->getToCurrencyCode(),
+            'orderNumber' => $this->getOrderNumber(),
             'callback' => $this->getReturnUrl(),
             'firstName' => $this->getFirstName(),
             'lastName' => $this->getLastName(),
