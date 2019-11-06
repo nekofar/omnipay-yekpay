@@ -66,7 +66,7 @@ The final result includes the following methods to inspect additional details:
 ```php
 // Send purchase complete request
 $response = $gateway->completePurchase([
-    'authority' => $_REQUEST['Authority'], 
+    'authority' => $_REQUEST['authority'], 
 )->send();
 
 // Process response
