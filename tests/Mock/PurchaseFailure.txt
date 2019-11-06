@@ -1,0 +1,15 @@
+HTTP/2 200
+date: Wed, 06 Nov 2019 11:54:52 GMT
+content-type: application/json
+cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
+vary: Accept-Encoding,User-Agent
+cache-control: max-age=172800
+expires: Fri, 08 Nov 2019 11:54:52 GMT
+cf-cache-status: DYNAMIC
+expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+server: cloudflare
+cf-ray: 5316e00bc993c791-AMS
+
+{"Code":-2,"Authority":0,"Description":"Merchant code is incorrect"}
