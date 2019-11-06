@@ -45,8 +45,19 @@ $gateway->setReturnUrl('https://www.example.com/return');
 
 // Send purchase request
 $response = $gateway->purchase([
-    'amount' => 100,
-    'description' => 'Some description'
+    'amount' => 799.00,
+    'fromCurrencyCode' => 978,
+    'toCurrencyCode' => 364,
+    'orderNumber' => 125548,
+    'firstName' => 'John',
+    'lastName' => 'Doe',
+    'email' => 'test@example.com',
+    'mobile' => '+44123456789',
+    'address' => 'Alhamida st Al ras st',
+    'postalCode' => '64785',
+    'country' => 'United Arab Emirates',
+    'city' => 'Dubai',
+    'description' => 'Apple mac book air 2017',
 ])->send();
 
 // Process response
